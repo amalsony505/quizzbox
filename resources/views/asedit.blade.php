@@ -120,13 +120,11 @@ table {
         <span class="text-danger">@error('name'){{ $message }} @enderror  </span>
         </div>
         
-      
         <div>
         <label><h3>Phone No:</h3></label>
         <input name="phone" value="{{$Info->phone}}" type="text" placeholder="Enter phone" class="form-control" id="ip2"/>
         <span class="text-danger">@error('phone'){{ $message }} @enderror  </span>
         </div>
-        
         
         <div>
         <label><h3>Approval:</h3></label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
