@@ -37,12 +37,12 @@
         </div>
         <div>
         <label><h4 style="color:white"> Password:</h4></label>
-        <input name="pass"  type="text" placeholder="Enter password" class="form-control" id="ip2">
+        <input name="pass"  type="password" placeholder="Enter password" class="form-control" id="ip2">
         <span class="text-danger">@error('pass'){{ $message }} @enderror  </span>
         </div>
         <div>
         <label><h4 style="color:white">Confirm Password:</h4></label>
-        <input name="cpass"  type="text" placeholder="Re-enter password" class="form-control" id="ip2">
+        <input name="cpass"  type="password" placeholder="Re-enter password" class="form-control" id="ip2">
         <span class="text-danger">@error('cpass'){{ $message }} @enderror  </span>
         </div>
        

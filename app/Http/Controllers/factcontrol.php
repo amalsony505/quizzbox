@@ -174,13 +174,11 @@ class factcontrol extends Controller
     public function update(Request $request){
         $request->validate([
             'name'=>'required',
-            'email'=>'required|email',
             'phone'=>'required|digits:10',
             'pass'=>'required|min:5'
         ]);
         $updating = DB::table('smodels')->where('id',$request->input('cid'))->update([
             'name'=>$request->input('name'),
-            'email'=>$request->input('email'),
             'phone'=>$request->input('phone'),
             'pass'=>$request->input('pass')
             

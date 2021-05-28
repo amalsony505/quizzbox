@@ -23,8 +23,7 @@
       <td><h5>{{ $item->email }}</h5></td>
       <td><h5>{{ $item->phone }}</h5></td>
       <td>
-      <div class="btn-group">
-      <a href="edit/{{ $item->id }}" class="btn btn-danger btn-xs">Edit</a> 
+      
        
       </td>
       </tr>

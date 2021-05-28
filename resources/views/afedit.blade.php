@@ -136,12 +136,12 @@ table {
         </div>
         <div>
         <label><h3> Password:</h3></label>
-        <input name="pass" value="{{$Info->pass}}"  type="text" placeholder="Enter password" class="form-control" id="ip2"/>
+        <input name="pass" value="{{$Info->pass}}"  type="password" placeholder="Enter password" class="form-control" id="ip2"/>
         <span class="text-danger">@error('pass'){{ $message }} @enderror  </span>
         </div>
         <div>
         <label><h3>Confirm Password:</h3></label>
-        <input name="cpass"   type="text" placeholder="Re-enter password" class="form-control" id="ip2"/>
+        <input name="cpass"   type="password" placeholder="Re-enter password" class="form-control" id="ip2"/>
         <span class="text-danger">@error('cpass'){{ $message }} @enderror  </span>
         </div>
        

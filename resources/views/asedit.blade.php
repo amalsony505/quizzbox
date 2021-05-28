@@ -105,7 +105,7 @@ table {
     <div class="row">
     <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
     <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-
+<br>
     <form action="/asupdate" method="post">
     {{ csrf_field() }}
     <input type="hidden" name="cid" value="{{ $Info->id}}">
@@ -119,27 +119,15 @@ table {
         <input name="name" value="{{ $Info->name }}" type="text" placeholder="Enter name" class="form-control" id="ip2"/>
         <span class="text-danger">@error('name'){{ $message }} @enderror  </span>
         </div>
-        <div>
-      <label><h3>Email Id:</h3></label>
-        <input name="email" value="{{$Info->email}}"  type="text" placeholder="Enter email" class="form-control" id="ip2"/>
-        <span class="text-danger">@error('email'){{ $message }} @enderror  </span>
-        </div>
+        
       
         <div>
         <label><h3>Phone No:</h3></label>
         <input name="phone" value="{{$Info->phone}}" type="text" placeholder="Enter phone" class="form-control" id="ip2"/>
         <span class="text-danger">@error('phone'){{ $message }} @enderror  </span>
         </div>
-        <div>
-        <label><h3> Password:</h3></label>
-        <input name="pass" value="{{$Info->pass}}"  type="text" placeholder="Enter password" class="form-control" id="ip2"/>
-        <span class="text-danger">@error('pass'){{ $message }} @enderror  </span>
-        </div>
-        <div>
-        <label><h3>Confirm Password:</h3></label>
-        <input name="cpass"   type="text" placeholder="Re-enter password" class="form-control" id="ip2"/>
-        <span class="text-danger">@error('cpass'){{ $message }} @enderror  </span>
-        </div>
+        
+        
         <div>
         <label><h3>Approval:</h3></label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="radio" name="status" value="yes" /> YES 

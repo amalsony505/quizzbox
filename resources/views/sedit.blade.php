@@ -133,11 +133,7 @@ table {
         <input name="name" value="{{ $Info->name }}" type="text" placeholder="Enter name" class="form-control" id="ip2"/>
         <span class="text-danger">@error('name'){{ $message }} @enderror  </span>
         </div>
-      <div>
-      <label><h3>Email Id:</h3></label>
-        <input name="email" value="{{$Info->email}}"  type="text" placeholder="Enter email" class="form-control" id="ip2"/>
-        <span class="text-danger">@error('email'){{ $message }} @enderror  </span>
-        </div>
+      
         <div>
         <label><h3>Phone No:</h3></label>
         <input name="phone" value="{{$Info->phone}}" type="text" placeholder="Enter phone" class="form-control" id="ip2"/>
@@ -145,12 +141,12 @@ table {
         </div>
         <div>
         <label><h3> Password:</h3></label>
-        <input name="pass" value="{{$Info->pass}}"  type="text" placeholder="Enter password" class="form-control" id="ip2"/>
+        <input name="pass" value="{{$Info->pass}}"  type="password" placeholder="Enter password" class="form-control" id="ip2"/>
         <span class="text-danger">@error('pass'){{ $message }} @enderror  </span>
         </div>
         <div>
         <label><h3>Confirm Password:</h3></label>
-        <input name="cpass"   type="text" placeholder="Re-enter password" class="form-control" id="ip2"/>
+        <input name="cpass"   type="password" placeholder="Re-enter password" class="form-control" id="ip2"/>
         <span class="text-danger">@error('cpass'){{ $message }} @enderror  </span>
         </div>
        
