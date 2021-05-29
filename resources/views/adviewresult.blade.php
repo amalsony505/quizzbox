@@ -26,6 +26,8 @@
      <th><h3><u>MarkScored</u></h3></th>
      <th><h3><u>MaximumMark</u></h3></th>
      
+     <th></th>
+     
      </thead>
      @foreach($list as $item)
      <tbody>
@@ -33,6 +35,11 @@
      <td><h3> {{ $item->sname }}</h3></td>
      <td><h3>{{ $item->result }}</h3></td>
      <td><h3>{{ $item->max }}</h3></td>
+     
+     <td>
+     <div class="btn-group" id="hide"> 
+      <a href="ardelete/{{ $item->id }}" onclick="return confirm('Are you sure ?')" class="btn btn-danger btn-xs">Delete</a>
+     </td>
      </tbody>
      @endforeach
       </table>

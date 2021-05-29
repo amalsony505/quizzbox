@@ -109,7 +109,7 @@ class admcontrol extends Controller
         
 
         $user->save();
-        return redirect('/addfact');
+        return redirect('/adviewfact');
 
     }
 
@@ -147,7 +147,8 @@ class admcontrol extends Controller
             'name'=>'required',
             'email'=>'required|email',
             'phone'=>'required|digits:10',
-            'pass'=>'required|min:5'
+            'pass'=>'required|min:5',
+            'cpass'=>'required|min:5|same:pass'
         ]);
         $updating = DB::table('factmodels')->where('id',$request->input('cid'))->update([
             'name'=>$request->input('name'),
@@ -194,7 +195,6 @@ class admcontrol extends Controller
 
         $updatings = DB::table('statuses')->where('email',$request->input('email'))->update([
             'name'=>$request->input('name'),
-           'email'=>$request->input('email'),
             'status'=>$request->input('status')
 
         //$updatings = DB::table('statuses')->where('email',session('loggeduser'))->update([
@@ -212,6 +212,12 @@ class admcontrol extends Controller
         return redirect('/adviewstud');
     }
 
+    public function ardelete($id)
+    {
+        $delete=DB::table('results')->where('id',$id)->delete();
+       
+        return redirect('/adviewresult');
+    }
     
     /**
      * Update the specified resource in storage.

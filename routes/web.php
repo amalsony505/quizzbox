@@ -72,6 +72,7 @@ Route::get('asedit/{id}',[admcontrol::class,'asedit']);
 Route::get('afedit/{id}',[admcontrol::class,'afedit']);
 Route::get('asdelete/{id}',[admcontrol::class,'asdelete']);
 Route::get('afdelete/{id}',[admcontrol::class,'afdelete']);
+Route::get('ardelete/{id}',[admcontrol::class,'ardelete']);
 
 
 
