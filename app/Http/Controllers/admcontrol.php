@@ -193,7 +193,7 @@ class admcontrol extends Controller
             
         ]);
 
-        $updatings = DB::table('statuses')->where('email',$request->input('cid'))->update([
+        $updatings = DB::table('statuses')->where('id',$request->input('cid'))->update([
             'name'=>$request->input('name'),
             'status'=>$request->input('status')
 
